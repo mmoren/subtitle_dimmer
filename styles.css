@@ -1,0 +1,5 @@
+.player-timedtext {
+    filter: brightness(60%) !important;
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+}

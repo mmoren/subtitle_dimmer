@@ -1,0 +1,39 @@
+{
+    "update_url": "http://clients2.google.com/service/update2/crx",
+    "name": "Subtitle Dimmer",
+    "version": "1.0",
+    "description": "Save your expensive OLED TV from those blinding white subtitles.",
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "icon19.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.netflix.com/*"
+            ],
+            "js": [
+                "content-script.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "https://www.netflix.com/*"
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "subtitle-dimmer@maxmoren.com",
+            "strict_min_version": "42.0"
+        }
+    }      
+}
