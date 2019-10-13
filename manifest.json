@@ -2,7 +2,7 @@
     "update_url": "http://clients2.google.com/service/update2/crx",
     "name": "Subtitle Dimmer",
     "version": "1.0",
-    "description": "Save your expensive OLED TV from those blinding white subtitles.",
+    "description": "Save your OLED TV from those blinding white subtitles.",
     "manifest_version": 2,
     "icons": {
         "16": "icon16.png",
